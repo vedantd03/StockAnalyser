@@ -1,0 +1,14 @@
+body{
+    background-image: linear-gradient(to right, rgb(5, 5, 48), black);
+}
+.card1{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 150px;
+    padding:20px;
+    padding-bottom: 30px;
+    padding-right: 40px;
+    max-width: max-content;
+    background-color: rgba(66, 66, 66, 0.413);
+    border-radius: 20px;
+}

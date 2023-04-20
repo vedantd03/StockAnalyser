@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    background-color: rgba(66, 66, 66, 0.413);
+    display: flex;
+    position: absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+.navbar2{
+    background-color: rgba(66, 66, 66, 0.413);
+    display: flex;
+    position: absolute ;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.ctn{
+    padding: 8px 15px;
+    background:#2f2f35 ;
+    border-radius: 10px;
+    color:whitesmoke;
+    max-width: 100px
+}
+.ctn1{
+    padding: 8px 15px;
+    box-sizing: content-box;
+    border: 2px solid #2784c2;
+    border-radius: 10px;
+    color:#2784c2;
+}
+ul{
+    list-style: none;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+a{
+    color: rgb(116, 125, 160);
+    font-weight: 600;
+    text-decoration: none;
+    margin: 30px 0;
+}
+body{
+    /* background-image: url('home.jpg'); */
+    background-image: linear-gradient(to right, rgb(5, 5, 48), black);
+    /* background-image: linear-gradient(to right, rgb(23, 4, 32), black); */
+    /* background-size: auto; */
+}
+.seinput {
+    padding: 12px 24px;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 13px;
+    line-height: 10px;
+    color: #575756;
+    background-color: transparent;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+.seinput::placeholder {
+    color: color(#575756 a(0.8));
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+}
+
+.seinput:hover,
+.seinput:focus {
+    padding: 12px 0;
+    outline: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #575756;
+    border-radius: 0;
+    background-position: 100% center;
+}
+
+.container{width: 100%;}
+.cent{
+    margin: 0px -8px 0px -1px; 
+    width: 100%; 
+    float: left; 
+    text-align: center; 
+    padding-top: 200px;
+}
+
+.flex-container > div{
+    text-align: center; 
+    padding-top: 400px;
+}
+.ctn1:hover{
+    background-color: var(--color);
+    color: black;  
+}
+/* .flex-container > div{
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: blanchedalmond;
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: medium;
+    line-height: 75px;
+} */
+.footer{margin: -8px; clear: both; text-align: end;
+     text-align: center; padding: 80px;
+}

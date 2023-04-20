@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Add-On</title>
+        <link rel="stylesheet" href="addon.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="search.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <!-- <img style="float:left" src="https://cdn-static.screener.in/img/logo-black.f44abb4998d1.svg" alt="Logo" width="130" height="90" > -->
+            <ul class="nav-links">
+                <li><img style="float:left;filter: invert(100%);" src="https://cdn-static.screener.in/img/logo-black.f44abb4998d1.svg" alt="Logo" width="130" height="90" ></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#watchlist">Watchlist</a></li>
+            </ul>
+            <ul class="nav-links">
+                <li><input class="seinput" type="text" placeholder="Search" id="searchinp"></li>
+                <li class="ctn"><a style="color:whitesmoke"href="login.html"><img style="max-width: 20%;"src="./loginim.png">&nbsp;&nbsp;Login</a></li>
+                <li class="ctn1"><a style="color:#2784c2;"href="signup.html">Get Free Account</a></li>
+            </ul>            
+        </nav>
+        <div class="card1">
+                <ul>
+                    <li class="ctn2"><a style="color: whitesmoke;" href="#">+ Follow</a></li> 
+                </ul>
+                <h1>Wipro ltd.</h1>
+                <p><b>₹361 </b><span class="name">0.10% <img style="max-width: 1.2%; padding-top: 2px"src="./stock-up.png"></p><br>
+                <a style="color:rgb(92, 92, 197); font-size:large; font-weight: bold; padding-right: 50px;" href="https://www.itcportal.com/"><img style="max-width: 1%;"src="./link.png"> wipro.com</a>
+                <a style="padding-right: 60px;"href="https://www.bseindia.com/stock-share-price/itc-ltd/ITC/500875/"><img style="max-width: 1.2%;"src="./newwin.png"> BSE: 507685</a>
+                <a href="https://www.nseindia.com/get-quotes/equity?symbol=ITC"><img style="max-width: 1.2%;"src="./newwin.png"> NSE: WIPRO</a><br><br>
+                <ul class="mm">
+                    <li>
+                        <div class="dets">
+                            <!-- <p style="font-size: 100%;">Market Cap&emsp;&emsp;₹<b>470,026</b> Cr.&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Current Price&emsp;&emsp;₹<b>378</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;High / Low&emsp;&emsp;₹<b>378</b> / <b>212</b></p><br>
+                            <p style="font-size: 100%;">Stock P/E&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<b>25.8</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Book Value&emsp;&emsp;&nbsp;&nbsp;₹<b>52.9</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Dividend Yield&emsp;&emsp;&nbsp;<b>3.02</b>%</p><br>
+                            <p style="font-size: 100%;">ROCE&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<b>33.6</b>%&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ROE&emsp;&emsp;&emsp;&emsp;&emsp;<b>24.8</b>%&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Face Value&emsp;&emsp;&emsp;&emsp;₹<b>1.00</b></p> -->
+                            <!-- <ul class="cont">
+                                <li>Market Cap&emsp;&emsp;₹<b>470,026</b> Cr.</li>
+                                <li>Current Price&emsp;&emsp;₹<b>378</b></li>
+                                <li>High / Low&emsp;&emsp;₹<b>378</b> / <b>212</b></li>
+                            </ul> -->
+                            <table style="font-size: 100%; table-layout:fixed;width:100%;">
+                                <tr>
+                                    <c><td align="left">Market Cap</td><td align="right">₹<b>470,026</b> Cr.</td></c>
+                                    <th><td align="left">Current Price</td><td align="right">₹<b>378</b></td></th>
+                                    <th><td align="left">High / Low</td><td align="right">₹<b>378</b> / <b>212</b></td></th>
+                                </tr>
+                                <tr>
+                                    <c><td align="left">Stock P/E</td><td align="right"><b>25.8</b></td></c>
+                                    <th><td align="left">Book Value</td><td align="right">₹<b>52.9</b></td></th>
+                                    <th><td align="left">Dividend Yield</td><td align="right"><b>3.02</b>%</td></th>
+                                </tr>
+                                <tr>
+                                    <c><td align="left">ROCE</td><td align="right"><b>33.6</b></td></c>
+                                    <th><td align="left">ROE</td><td align="right"><b>24.8</b></td></th>
+                                    <th><td align="left">Face Value</td><td align="right">₹<b>1.00</b></td></th>
+                                </tr>
+                            </table>
+                        </div>
+                    </li>
+                    <!-- <li style="max-width: auto;">
+                        <div class="ab">
+                            <h4 style="color:whitesmoke">ABOUT US</h4>
+                            <p style="font-size: 95%; padding-top: 10px;">Established in 1910, ITC is the largest cigarette manufacturer and seller in the country. ITC operates in five business segments at present — FMCG Cigarettes, FMCG Others, Hotels, Paperboards, Paper and Packaging, and Agri Business.</p>
+                        </div>
+                    </li> -->
+                </ul>
+                <div class="ab">
+                    <h4 style="color:whitesmoke">ABOUT US</h4>
+                    <p style="font-size: 95%; padding-top: 10px;">Wipro Ltd is a global Information technology, consulting and business process services (BPS) company. A company recognized globally for its comprehensive portfolio of services, strong commitment to sustainability and good corporate citizenship.</p>
+                </div>
+        </div>
+        <div class="card2">
+            <div>
+                <canvas id="myChart" style="width:100%;max-width:max-content"></canvas>
+                <script>
+                    var yValues = [345,221,345,420,340,223,345,221,345,420,340,223,345,221,345,453,324,543,300,163,432,567];
+                    var xValues = [2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2021,2022];
+                    new Chart("myChart", {
+                      type: "bar",
+                      data: {
+                        labels: xValues,
+                        datasets: [{
+                          fill: false,
+                          lineTension: 0,
+                          backgroundColor: "white",
+                          borderColor: "white",
+                          data: yValues
+                        }]
+                      },
+                      options: {
+                        legend: {display: false},
+                      }
+                    });
+                    </script>
+            </div>
+        </div>  
+        <br>
+        <nav class="navbar2">
+            <ul class="nav-links">
+                <li><img style="float:left; filter: invert(100%);" src="https://cdn-static.screener.in/img/logo-black.f44abb4998d1.svg" alt="Logo" width="130" height="90" ></li>
+                <li style="color:white; font-size: small;">Made By: <br>Vedant Dhotre: 16010421020<br> Sahana Ganesh: 16010421027</li>
+            </ul>
+            <ul class="nav-links" style="float:right">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>
