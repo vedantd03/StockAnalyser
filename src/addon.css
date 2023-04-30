@@ -78,7 +78,8 @@ ul{
     margin-right: 70px;
     margin-top: 50px;
     padding:20px;
-    max-width: 100%;
+    max-width: 95%;
+    height: 600px;
     background-color: rgba(66, 66, 66, 0.413);
     border-radius: 20px;
 }
