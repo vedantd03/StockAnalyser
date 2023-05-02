@@ -7,6 +7,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./signupstyles.css">
     <title>Sign-up</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("R7UJ0ry5U-ihkjWMM");
+    })();
+    </script>
+    <script defer>
+        function sent()
+        {
+            var name = document.getElementById('first-name').value;
+            var mail = document.getElementById('email').value;
+            var pass = document.getElementById('passwor').value;
+            var cpass = document.getElementById('confirm-password').value;
+            if(pass == cpass){
+                document.getElementById('confirm-password').style.borderColor = "#666666";
+                document.getElementById('lconf').style.borderColor = "#666666";
+                var params = {
+                    name: name,
+                    email: mail,
+                }
+                const serviceID = "service_z3ns17h";
+                const templateID = "template_8dmlxo8";
+
+                emailjs.send(serviceID, templateID, params)
+                .then(res=>{
+                    console.log(res);
+                    alert("Email Sent successfully!")
+                    location.replace('./index.html');
+                })
+                .catch(err=>console.log(err));
+            }
+            else{
+                document.getElementById('confirm-password').style.borderColor = "red";
+                document.getElementById('lconf').style.color = "red";
+                document.getElementById('confirm-password').value = "";
+            }
+        }
+    </script>
 </head>
 <body>
     <nav class="navbar">
@@ -28,7 +68,7 @@
                 <p>Over 10 lakh investors use Screener for finding and tracking stock ideas.</p>
                 <p>Sign up <em>now</em> to get started.</p><br>
             </div>
-            <form action="#">
+            <form action="" method="post" onsubmit="sent(); return false">
                 <div class="form left">
                     
                     <div class="input">
@@ -47,7 +87,7 @@
                     </div>
                     
                     <div class="input">
-                        <label for="confirm-password">Confirm password</label>
+                        <label for="confirm-password" id = "lconf">Confirm password</label>
                         <input style="height:27px" type="password" name="confirm-password" id="confirm-password" required>
                     </div>
                 </div>
